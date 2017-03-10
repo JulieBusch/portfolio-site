@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  width: 100%;
+  background-color: rgb(198, 247, 255);
+  /*vertical-align: middle;*/
+  text-align: center;
+}
+
+footer > p {
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
