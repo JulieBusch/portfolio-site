@@ -1,5 +1,16 @@
 import React from 'react';
 
-export default function appStart(props) {
-  return(<div>YOUR APP IS RENDERING SO FAR</div>);
+import Navbar from './Navbar'
+
+export default function AppStart ({ children }) {
+  return (
+    <div>
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        { children }
+      </div>
+    </div>
+  );
 }
