@@ -1,9 +1,11 @@
 @mixin make-cols ($type) {
   @for $i from 1 through 12 {
     .col-#{$type}-#{$i} {
-      float: left;
       width: $i * 100%/12;
-      padding: 0 $gutter-size;
+      padding: 0;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
     }
   }
 }
