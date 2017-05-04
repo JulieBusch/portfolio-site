@@ -8,7 +8,7 @@ export default function AppStart ({ children }) {
       <div>
         <Navbar />
       </div>
-      <div>
+      <div className="clear-nav">
         { children }
       </div>
     </div>
