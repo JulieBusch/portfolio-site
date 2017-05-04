@@ -2,8 +2,9 @@ import React from 'react';
 
 export default function Resume(props) {
   return (
-    <div>
-      <embed src="/resume.pdf" width="800px" height="700px"/>
+    <div className="container">
+      <iframe width="900px" height="1200px" src="/resume.pdf" />
     </div>
   );
 }
+

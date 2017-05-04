@@ -1,0 +1,8 @@
+#contact {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3%;
+  border-radius: 10px;
+  align-self: center; }
+  #contact h2 {
+    margin-top: 0px; }

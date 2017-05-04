@@ -1,11 +1,13 @@
 nav {
   display: flex;
-  height: 60px;
+  height: 9%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   position: fixed;
   top: 0;
   align-items: center; }
+  nav img {
+    height: 100%; }
 
 #nav-menu-left {
   margin-left: 15px;
@@ -14,11 +16,14 @@ nav {
   display: flex;
   align-items: center;
   width: 50%;
-  height: 60px; }
+  height: 100%; }
   #nav-menu-left h4 {
     margin: 15px;
     display: flex;
-    color: white; }
+    color: white;
+    transition: all .1s linear; }
+  #nav-menu-left h4:active {
+    transform: translateY(1px); }
 
 #nav-menu-right {
   margin-right: 15px;
@@ -27,12 +32,19 @@ nav {
   justify-content: flex-end;
   display: flex;
   width: 50%;
-  height: 60px; }
+  height: 100%; }
   #nav-menu-right h4 {
     margin: 15px;
     display: flex;
-    color: white; }
+    color: white;
+    transition: all .1s linear; }
+  #nav-menu-right h4:active {
+    transform: translateY(1px); }
 
 a {
   text-decoration: none;
   color: white; }
+
+.clear-nav {
+  margin-top: 12%;
+  margin-bottom: 8%; }

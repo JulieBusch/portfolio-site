@@ -8266,13 +8266,13 @@ module.exports = ReactNoopUpdateQueue;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Router__ = __webpack_require__(221);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Router__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Link__ = __webpack_require__(102);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__Link__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__Link__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__IndexLink__ = __webpack_require__(217);
 /* unused harmony reexport IndexLink */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__withRouter__ = __webpack_require__(232);
 /* unused harmony reexport withRouter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__ = __webpack_require__(218);
-/* unused harmony reexport IndexRedirect */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__IndexRoute__ = __webpack_require__(219);
 /* unused harmony reexport IndexRoute */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(104);
@@ -12643,11 +12643,20 @@ function About(props) {
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "div",
       { id: "about" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "profile.jpg" }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/images/profile.jpg" }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "p",
         null,
-        "ABOUT ME HERE"
+        "Hello! I'm Julie Busch. Welcome to my site! It's in its infancy right now; as it progresses you can expect to see more media examples of my work. In the meantime, take a look around! There's still plenty to explore!",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+        "I am a full stack software engineer with a background in stage management.",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+        "The analytical skills of stage management have many parallels with coding. A stage manager translates the fantasy world of a play into the real world and is at the forefront of making an ephemeral work of art into a successful production. As a software engineer I am given an idea and then I do what needs to be done to bring that idea to fruition. I also happen to love the work that goes into making sense out of chaos. I'm proud of my ability to organize large amounts of information into documents that are useful, simple to understand, and visually appealing, and I strive to make clean, maintainable code that reflects that.",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+        "My goal is to work full time as a developer for an energetic company in which I can grow. Given my past experience I think that product management would make the best use of my skills and would be highly fulfilling, but my current focus is on building software as an engineer. I enjoy working with the full stack and am particularly interested in front end development."
       )
     )
   );
@@ -12679,7 +12688,7 @@ function AppStart(_ref) {
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      null,
+      { className: 'clear-nav' },
       children
     )
   );
@@ -12696,26 +12705,44 @@ function AppStart(_ref) {
 
 
 
+
 /* harmony default export */ __webpack_exports__["a"] = (function (props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    null,
-    __WEBPACK_IMPORTED_MODULE_1__projectInfo__["a" /* default */].map(function (project, idx) {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        { key: project.id, className: 'card' },
-        project.name,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-        project.date,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-        project.position,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-        'Made with ',
-        project.technologies,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-        project.description
-      );
-    })
+    { className: 'container' },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'row' },
+      __WEBPACK_IMPORTED_MODULE_1__projectInfo__["a" /* default */].map(function (project, idx) {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { key: project.id, className: 'card col-lg-4 col-md-6 col-sm-12' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'h2',
+            null,
+            project.name
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          project.date,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'em',
+            null,
+            project.position
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          'Built with ',
+          project.technologies,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            null,
+            project.description
+          )
+        );
+      })
+    )
   );
 });
 
@@ -12732,8 +12759,8 @@ function AppStart(_ref) {
 function Resume(props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     "div",
-    null,
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("embed", { src: "/resume.pdf", width: "800px", height: "700px" })
+    { className: "container" },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("iframe", { width: "900px", height: "1200px", src: "/resume.pdf" })
   );
 }
 
@@ -12767,12 +12794,16 @@ function Navbar(props) {
       'div',
       { id: 'nav-menu-left' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'h4',
-        null,
-        'experience'
+        __WEBPACK_IMPORTED_MODULE_1_react_router__["e" /* Link */],
+        { to: '/experience' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h4',
+          null,
+          'experience'
+        )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_react_router__["d" /* Link */],
+        __WEBPACK_IMPORTED_MODULE_1_react_router__["e" /* Link */],
         { to: '/projects' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h4',
@@ -12781,27 +12812,21 @@ function Navbar(props) {
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'h4',
-        null,
-        'skills'
+        __WEBPACK_IMPORTED_MODULE_1_react_router__["e" /* Link */],
+        { to: '/skills' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h4',
+          null,
+          'skills'
+        )
       )
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'span',
-      null,
-      'Julie Busch'
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'span',
-      null,
-      'Software Engineer'
-    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/images/nav-logo.png' }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { id: 'nav-menu-right' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_react_router__["d" /* Link */],
+        __WEBPACK_IMPORTED_MODULE_1_react_router__["e" /* Link */],
         { to: '/resume' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h4',
@@ -12810,7 +12835,7 @@ function Navbar(props) {
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_react_router__["d" /* Link */],
+        __WEBPACK_IMPORTED_MODULE_1_react_router__["e" /* Link */],
         { to: '/about' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h4',
@@ -12819,9 +12844,13 @@ function Navbar(props) {
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'h4',
-        null,
-        'contact'
+        __WEBPACK_IMPORTED_MODULE_1_react_router__["e" /* Link */],
+        { to: '/contact' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h4',
+          null,
+          'contact'
+        )
       )
     )
   );
@@ -12842,6 +12871,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_About__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Resume__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Projects__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Contact__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Home__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Skills__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Experience__ = __webpack_require__(249);
+
+
+
+
 
 
 
@@ -12859,9 +12896,14 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_react_dom__["render"])(__WEBPA
   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     __WEBPACK_IMPORTED_MODULE_1_react_router__["c" /* Route */],
     { path: '/', component: __WEBPACK_IMPORTED_MODULE_3__components_App__["a" /* default */] },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router__["d" /* IndexRedirect */], { to: '/about' }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router__["c" /* Route */], { path: '/home', component: __WEBPACK_IMPORTED_MODULE_8__components_Home__["a" /* default */] }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router__["c" /* Route */], { path: '/about', component: __WEBPACK_IMPORTED_MODULE_4__components_About__["a" /* default */] }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router__["c" /* Route */], { path: '/skills', component: __WEBPACK_IMPORTED_MODULE_9__components_Skills__["a" /* default */] }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router__["c" /* Route */], { path: '/experience', component: __WEBPACK_IMPORTED_MODULE_10__components_Experience__["a" /* default */] }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router__["c" /* Route */], { path: '/resume', component: __WEBPACK_IMPORTED_MODULE_5__components_Resume__["a" /* default */] }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router__["c" /* Route */], { path: '/projects', component: __WEBPACK_IMPORTED_MODULE_6__components_Projects__["a" /* default */] })
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router__["c" /* Route */], { path: '/projects', component: __WEBPACK_IMPORTED_MODULE_6__components_Projects__["a" /* default */] }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router__["c" /* Route */], { path: '/contact', component: __WEBPACK_IMPORTED_MODULE_7__components_Contact__["a" /* default */] })
   )
 ), document.getElementById('app'));
 
@@ -12871,15 +12913,65 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_react_dom__["render"])(__WEBPA
 
 "use strict";
 /* harmony default export */ __webpack_exports__["a"] = ([{
+  id: 6,
+  name: 'More to come!',
+  date: 'April 2017 - May 2017',
+  github: 'github',
+  site: 'stagedfright.com',
+  youtube: 'youtube',
+  position: null,
+  technologies: 'love',
+  description: 'Lately I\'ve been working on creating and presenting educational lectures for students in The Grace Hopper Program at Fullstack Academy! Check back for future development projects!'
+}, {
   id: 1,
+  name: 'Catstravaganza',
+  date: 'March 2017',
+  github: 'github',
+  site: 'stagedfright.com',
+  youtube: 'youtube',
+  position: 'Sole Developer',
+  technologies: 'Node, Express, PostgreSQL, and Sequelize',
+  description: 'A review for students exploring using routes in an Express app to modify a PostgreSQL database through the Javascript ORM Sequelize. Codebase accompanied by 1.25 hours of recorded review lectures and an hour of live demonstration.'
+}, {
+  id: 2,
   name: 'StagedFright',
   date: 'January 2017 - February 2017',
   github: 'github',
   site: 'stagedfright.com',
   youtube: 'youtube',
   position: 'Full Stack Developer',
-  technologies: 'React, Redux, A-Frame, Firebase',
+  technologies: 'React, Redux, A-Frame, and Firebase',
   description: 'A WebVR app that allows users to practice public speaking. Your speech scrolls in front of you as you stand on stage in front of a large crowd; the VR view includes real-time feedback on pitch and volume.'
+}, {
+  id: 3,
+  name: 'Tiny Travel Books',
+  date: 'January 2017 - ongoing',
+  github: 'github',
+  site: 'stagedfright.com',
+  youtube: 'youtube',
+  position: 'Sole Developer',
+  technologies: 'React, Redux, Express, Sequelize, and Node',
+  description: 'A nascent platform for users to create customized pocket-sized travel guides that include their own transportation and lodging information. Users can share pages they make for destinations and choose pages with info on various activities to add to their books. Includes book building, e-commerce, and social networking features.'
+}, {
+  id: 4,
+  name: 'Superpower Store',
+  date: 'January 2017',
+  github: 'github',
+  site: 'stagedfright.com',
+  youtube: 'youtube',
+  position: 'Full Stack Developer',
+  technologies: 'React, Redux, Express, Sequelize, and Node',
+  description: 'An e-commerce store that sells superpowers. Implemented catalog view, single product view, and review system in React; wrote the product descriptions.'
+}, {
+  id: 5,
+  name: 'Stop, Teaf',
+  date: 'October 2016',
+  github: 'github',
+  site: 'stagedfright.com',
+  youtube: 'youtube',
+  position: 'Full Stack Developer',
+  technologies: 'Built with Node, Tessel APIs, Tessel hardware, and HTTP',
+  description: 'Stop, Teaf won the Fullstack/Grace Hopper Tessel Hackathon’s “Best Solution to an On-Campus Problem” prize. It allows a user to place a sensor with an accelerometer inside of something important to them that is kept in a shared space. The sensor wirelessly connects to a server running on the user’s computer. If the item is moved an alarm goes off on the computer and the user’s CLI prompts them to type a message to the thief; that message is then read aloud to the thief in the other room via text-to-speech conversion. '
 }]);
 
 /***/ }),
@@ -24902,7 +24994,7 @@ var IndexRedirect = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
   }
 });
 
-/* unused harmony default export */ var _unused_webpack_default_export = (IndexRedirect);
+/* harmony default export */ __webpack_exports__["a"] = (IndexRedirect);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
@@ -27878,6 +27970,141 @@ module.exports = function (str) {
 	});
 };
 
+
+/***/ }),
+/* 247 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony export (immutable) */ __webpack_exports__["a"] = About;
+
+
+function About(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "div",
+    { className: "container" },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "div",
+      { id: "contact" },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "h2",
+        null,
+        "Feel free to get in touch!"
+      ),
+      "917.574.4977",
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+      "heyjuliebusch@gmail.com",
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "a",
+        { href: "www.github.com/JulieBusch" },
+        "GitHub"
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "a",
+        { href: "www.linkedin.com/in/julie-busch" },
+        "LinkedIn"
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 248 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router__ = __webpack_require__(71);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function (props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    { className: 'container' },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'home' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        null,
+        'Hello, and welcome to my site! It\'s in its infancy right now; as it progresses you can expect to see more media examples of my work. In the meantime, take a look around! There\'s still plenty to explore!'
+      )
+    )
+  );
+});
+
+/***/ }),
+/* 249 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router__ = __webpack_require__(71);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function (props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    { className: 'container' },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'home' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        null,
+        'This part of the site is still in progress! For more info, head on over to my ',
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react_router__["e" /* Link */],
+          { to: '/resume' },
+          'resume!'
+        )
+      )
+    )
+  );
+});
+
+/***/ }),
+/* 250 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router__ = __webpack_require__(71);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function (props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    { className: 'container' },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'home' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        null,
+        'This part of the site is still in progress! For more info, head on over to my ',
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react_router__["e" /* Link */],
+          { to: '/resume' },
+          'resume!'
+        )
+      )
+    )
+  );
+});
 
 /***/ })
 /******/ ]);

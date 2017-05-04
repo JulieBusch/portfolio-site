@@ -1,8 +1,22 @@
 #about {
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10%;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3%;
   border-radius: 10px;
-  margin-top: 125px; }
+  align-self: center; }
   #about img {
-    width: 20%; }
+    width: 30%;
+    float: left;
+    margin: 0px 3% 2% 0px; }
+  #about p {
+    margin: 0px;
+    text-align: justify; }
+
+.home {
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3%;
+  border-radius: 10px;
+  align-self: center; }
+  .home p {
+    margin: 0px; }

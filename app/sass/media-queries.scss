@@ -1,7 +1,7 @@
 @mixin make-cols ($type) {
   @for $i from 1 through 12 {
     .col-#{$type}-#{$i} {
-      width: $i * 100%/12;
+      width: $i * 95%/12;
       padding: 0;
       display: flex;
       text-align: center;
@@ -20,4 +20,16 @@ $type-sizes: (
   @media screen and (min-width: $size) {
     @include make-cols($type);
   }
+}
+
+@media screen and (max-width: 800px) {
+  #about {
+  width: 75%;
+  img{
+    width: 50%;
+    margin: 2%;
+    float: none;
+  }
+}
+
 }
