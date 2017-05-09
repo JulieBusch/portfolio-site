@@ -13,9 +13,9 @@ export default function (props) {
                 <h3>{job.location}</h3>
                   <br />
                   <br />
-                <h3>{job.date}</h3>
-                  <br />
                 <h3><em>{job.position}</em></h3>
+                  <br />
+                <h3>{job.date}</h3>
                 <div className="exListCont">
                   <ul className="exList">
                     {
