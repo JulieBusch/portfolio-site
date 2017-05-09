@@ -2,7 +2,7 @@
   @for $i from 1 through 12 {
     .col-#{$type}-#{$i} {
       width: $i * 95%/12;
-      padding: 0;
+      padding: 0px;
       display: flex;
       text-align: center;
       flex-direction: column;
@@ -24,12 +24,20 @@ $type-sizes: (
 
 @media screen and (max-width: 800px) {
   #about {
-  width: 75%;
-  img{
-    width: 50%;
-    margin: 2%;
-    float: none;
+    width: 75%;
+    img{
+      width: 50%;
+      margin: 2%;
+      float: none;
+    }
+  }
+  .card {
+    padding: 5%;
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .card {
+    padding: 10%;
+  }
 }

@@ -1,0 +1,43 @@
+.exList {
+  list-style-type: disc;
+  justify-content: flex-start;
+  text-align: left; }
+  .exList li {
+    margin-top: 9px; }
+
+.exListCont {
+  width: 80%;
+  align-self: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px; }
+
+.exSpacing {
+  width: 80%;
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column; }
+  .exSpacing h2 {
+    margin-bottom: 3px; }
+
+.exCard {
+  width: 100% !important;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 300ms, box-shadow 300ms;
+  padding: 20%;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  flex-direction: column; }
+  .exCard p {
+    text-align: justify;
+    margin: 2%; }
+  .exCard h3 {
+    margin: 0px; }
+
+.exCard:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3); }

@@ -6,3 +6,7 @@
   align-self: center; }
   #contact h2 {
     margin-top: 0px; }
+  #contact img {
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px; }

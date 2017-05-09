@@ -5,16 +5,11 @@ export default function About (props) {
     <div className="container">
       <div id="contact">
         <h2>Feel free to get in touch!</h2>
-        917.574.4977
-          <br />
-          <br />
         heyjuliebusch@gmail.com
           <br />
           <br />
-        <a href="www.github.com/JulieBusch">GitHub</a>
-          <br />
-          <br />
-        <a href="www.linkedin.com/in/julie-busch">LinkedIn</a>
+        <a href="www.github.com/JulieBusch"><img src="/images/github.png" /></a>
+        <a href="www.linkedin.com/in/julie-busch"><img src="/images/linkedin.png" /></a>
       </div>
     </div>
   );
