@@ -423,7 +423,11 @@ nav {
 
 a {
   text-decoration: none;
-  color: white; }
+  color: white;
+  outline: none !important; }
+
+a:hover, a:active, a:focus {
+  outline: none !important; }
 
 .clear-nav {
   margin-top: 10%;
