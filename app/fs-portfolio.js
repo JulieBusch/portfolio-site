@@ -4,11 +4,11 @@ export default [
     name: 'ES6 Tutorials',
     date: 'May 2017',
     github: null,
-    site: null,
+    site: "https://scrimba.com/playlist/playlist-40",
     youtube: null,
     position: null,
     technologies: 'Scrimba',
-    description: 'I made a series of short videos to help students learn the new ES6 features they will need to be most familiar with when going through the curriculum. The platform I used, Scrimba, is a video text editor that allows the viewer to pause the video to edit and run the code.'
+    description: 'I am making a series of short videos to help students learn the new ES6 features they will need to be most familiar with when going through the curriculum. The platform I used, Scrimba, is a video text editor that allows the viewer to pause the video to edit and run the code. Arrow functions are the first ES6 concept I\'m covering.'
   },
   {
     id: 5,
