@@ -40,8 +40,8 @@ export default [
     site: 'https://learn.fullstackacademy.com/workshop/58e7eb4e908d32000403dbfd/landing',
     youtube: null,
     position: null,
-    technologies: 'learndot and love',
-    description: 'This started as an idea for a live presentation geared at showing students how to customize their bash prompts. At Joe\'s suggestion I made it into a workshop and included information on environment variables; while I was at it I put in a tutorial on shell aliases. Further content I\'d like to add to the workshop includes information on SSH and other fun, useful stuff you can do from your terminal.'
+    technologies: 'in-house learning software',
+    description: 'This started as an idea for a live presentation geared at showing students how to customize their bash prompts. At an instructor\'s suggestion I made it into a workshop and included information on environment variables; while I was at it I put in a tutorial on shell aliases. Further content I\'d like to add to the tutorial includes information on SSH and other fun, useful things you can do from your terminal.'
   },
   {
     id: 2,
