@@ -1,14 +1,25 @@
 export default [
   {
-    id: 7,
-    name: 'More to come!',
-    date: 'April 2017 - May 2017',
+    id: 8,
+    name: 'ES6 Tutorials',
+    date: 'May 2017',
     github: null,
-    site: null,
+    site: "https://scrimba.com/playlist/playlist-40",
     youtube: null,
     position: null,
-    technologies: 'love',
-    description: 'As a teaching fellow for The Grace Hopper Program at Fullstack Academy I\'ve been working on creating and presenting educational lectures for students! Check back for future development projects!'
+    technologies: 'Scrimba',
+    description: 'I am making a series of short videos to help students learn the new ES6 features they will need to be most familiar with when going through the curriculum. The platform I used, Scrimba, is a video text editor that allows the viewer to pause the video to edit and run the code. Arrow functions are the first ES6 concept I\'m covering.'
+  },
+  {
+    id: 7,
+    name: 'JavaScript Promises Lecture',
+    date: 'April 2017',
+    github: null,
+    site: null,
+    youtube: 'https://youtu.be/o7lJpMUUPWc',
+    position: null,
+    technologies: 'Node',
+    description: 'I gave a class in the Grace Hopper Program at Fullstack Academy their introductory Promises lecture. I began by talking about asynchronicity in Node and the shortcomings of using callbacks to handle async operations; I then showed how using Promises instead could mitigate if not obviate those shortcomings.'
   },
   {
     id: 6,
@@ -19,7 +30,7 @@ export default [
     youtube: 'https://www.youtube.com/watch?v=AwdUW-piBQ0',
     position: null,
     technologies: 'www.slides.com',
-    description: 'I presented a tech talk of my own making entitled "React Context: The Forbidden Feature" to an audience of students.'
+    description: 'I created and presented a tech talk entitled "React Context: The Forbidden Feature" to an audience of ~50 students.'
   },
   {
     id: 5,
@@ -30,7 +41,7 @@ export default [
     youtube: 'https://www.youtube.com/playlist?list=PLk5Vu_Ia9i5omdnNhfnTCbufKYyJfD8JV',
     position: null,
     technologies: 'Node, Express, PostgreSQL, and Sequelize',
-    description: 'Catstravaganza is a review exploring how to use routes in an Express app to modify a PostgreSQL database through the Javascript ORM Sequelize. For this I created a codebase and used it to lead an hour-long live review and a 15 minute live review of the solution to a challenge given at the end of the first review. I also recorded an hour-long review video going over the concepts explained in the live review.'
+    description: 'Catstravaganza is a review exploring how to use routes in a RESTful Express API to modify a PostgreSQL database through the JavaScript ORM Sequelize. For this I created a codebase and used it to lead an hour-long live review and a 15 minute live review of the solution to a challenge given at the end of the first review. I also recorded an hour-long review video going over the concepts explained in the live review.'
   },
   {
     id: 4,
