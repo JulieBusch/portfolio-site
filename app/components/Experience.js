@@ -1,5 +1,5 @@
 import React from 'react';
-import experience from '../experience';
+import experience from '../data/experience';
 
 export default function (props) {
   return (
@@ -8,7 +8,7 @@ export default function (props) {
         {
           experience.map((job) => {
             return (
-              <div key={job.id} className="col-lg-12 col-md-12 col-sm-12 exCard">
+              <div key={job.id} className="col-lg-12 col-md-12 col-sm-12 card exCard">
                 <h2>{job.company}</h2>
                 <h3>{job.location}</h3>
                   <br />
@@ -19,7 +19,7 @@ export default function (props) {
                 <div className="exListCont">
                   <ul className="exList">
                     {
-                      job.description.map((point) => <li key={point.id}>{point}</li>)
+                      job.description.map((point, idx) => <li key={idx}>{point}</li>)
                     }
                   </ul>
                 </div>

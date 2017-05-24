@@ -1,3 +1,5 @@
+// generate column classes
+
 @mixin make-cols ($type) {
   @for $i from 1 through 12 {
     .col-#{$type}-#{$i} {
@@ -22,7 +24,13 @@ $type-sizes: (
   }
 }
 
+// small screen queries
+
 @media screen and (max-width: 800px) {
+  body {
+    font-size: .6em;
+  }
+
   #about {
     width: 75%;
     img{
@@ -31,13 +39,12 @@ $type-sizes: (
       float: none;
     }
   }
-  .card {
-    padding: 5%;
-  }
 }
 
+//medium screen queries
+
 @media screen and (max-width: 1000px) {
-  .card {
-    padding: 10%;
+  body {
+    font-size: .8em;
   }
 }

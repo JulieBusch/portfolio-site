@@ -1,0 +1,31 @@
+.projCard {
+  p {
+    text-align: justify !important;
+    margin: 2%;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+}
+
+.iconRow {
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 20%;
+  margin: 2%;
+  display: flex;
+  align-items: center
+  a {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.info {
+  font-size: 1.2em;
+}

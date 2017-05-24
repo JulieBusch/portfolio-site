@@ -1,6 +1,6 @@
 import React from 'react';
 
-import projects from '../projectInfo';
+import projects from '../data/projectInfo';
 
 export default function(props) {
   return (
@@ -9,33 +9,33 @@ export default function(props) {
       {
         projects.map((project, idx) => {
           return (
-            <div key={project.id} className="card col-lg-4 col-md-6 col-sm-12">
+            <div key={project.id} className="card projCard col-lg-4 col-md-6 col-sm-12">
               <h2>{project.name}</h2>
                 <br />
               {
                 project.youtube || project.github || project.site
-                  ? <div className="row" style={{justifyContent: 'center'}}>
+                  ? <div className="row iconRow">
                       {
                         project.youtube &&
-                          <div style={{width: '20%', margin: '2%', display: 'flex', alignItems: 'center'}}>
-                            <a style={{width: '100%'}} href={project.youtube}>
-                              <img style={{width: '100%'}} src="/images/youtube.png"/>
+                          <div className="icon">
+                            <a href={project.youtube}>
+                              <img src="/images/youtube.png"/>
                             </a>
                           </div>
                       }
                       {
                         project.site &&
-                          <div style={{width: '20%', margin: '2%', display: 'flex', alignItems: 'center'}}>
-                            <a style={{width: '100%'}} href={project.site}>
-                              <img style={{width: '100%'}} src="/images/earth.png"/>
+                          <div className="icon">
+                            <a href={project.site}>
+                              <img src="/images/earth.png"/>
                             </a>
                           </div>
                       }
                       {
                         project.github &&
-                          <div style={{width: '20%', margin: '2%', display: 'flex', alignItems: 'center'}}>
-                            <a style={{width: '100%'}} href={project.github}>
-                              <img style={{width: '100%'}} src="/images/github.png"/>
+                          <div className="icon">
+                            <a href={project.github}>
+                              <img src="/images/github.png"/>
                             </a>
                           </div>
                       }
@@ -43,13 +43,15 @@ export default function(props) {
                   : null
               }
                 <br />
-              {project.date}
-                <br />
-              <em>{project.position}</em>
-                <br />
-              Built with {project.technologies}
-                <br />
-                <br />
+              <div className="info">
+                {project.date}
+                  <br />
+                <h4><em>{project.position}</em></h4>
+                  <br />
+                Built with {project.technologies}
+                  <br />
+                  <br />
+              </div>
               <p>{project.description}</p>
             </div>
           );
