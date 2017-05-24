@@ -9,7 +9,7 @@ export default function(props) {
       {
         projects.map((project, idx) => {
           return (
-            <div key={project.id} className="card projCard col-lg-4 col-md-6 col-sm-12">
+            <div key={project.id} className="card projCard col-xl-3 col-lg-4 col-md-6 col-sm-12">
               <h2>{project.name}</h2>
                 <br />
               {

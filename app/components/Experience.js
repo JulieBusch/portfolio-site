@@ -8,7 +8,7 @@ export default function (props) {
         {
           experience.map((job) => {
             return (
-              <div key={job.id} className="col-lg-12 col-md-12 col-sm-12 card exCard">
+              <div key={job.id} className="col-xl-12 col-lg-12 col-md-12 col-sm-12 card exCard">
                 <h2>{job.company}</h2>
                 <h3>{job.location}</h3>
                   <br />
