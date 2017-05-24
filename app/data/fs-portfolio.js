@@ -4,7 +4,7 @@ export default [
     name: 'ES6 Tutorials',
     date: 'May 2017',
     github: null,
-    site: "https://scrimba.com/playlist/playlist-40",
+    site: 'https://scrimba.com/playlist/playlist-40',
     youtube: null,
     position: null,
     technologies: 'Scrimba',

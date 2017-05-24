@@ -1,26 +1,9 @@
 .skillCard {
-  display: flex;
-  background-color: rgba(0, 0, 0, .5);
-  transition: background-color 300ms, box-shadow 300ms;
-  // transition-timing-function: linear;
-  padding-top: 3% !important;
-  padding-bottom: 3% !important;
-  border-radius: 10px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  box-shadow: 0px 0px rgba(0, 0, 0, .3);
-  justify-content: flex-start;
-  flex-direction: column;
-  p {
-    text-align: justify;
-    margin: 2%;
-  }
   h3 {
-    margin: 0px;
+    font-size: 1.2em;
+    margin-bottom: .3em;
   }
-}
-
-.skillCard:hover {
-  background-color: rgba(0, 0, 0, .8);
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
+  li {
+    margin-top: .5em;
+  }
 }

@@ -1,10 +1,21 @@
 export default [
   {
+    id: 9,
+    name: 'Julie Busch Codes',
+    date: 'May 2017',
+    github: 'https://github.com/JulieBusch/portfolio-site',
+    site: null,
+    youtube: null,
+    position: 'Sole Developer',
+    technologies: 'React and SCSS/Sass',
+    description: 'Of course I made this website! It is a work in progress. You can take a look at the code if you\'d like. I\'m focusing on responsive design and code modularity with this project, and will add some tasteful CSS animations as time permits.'
+  },
+  {
     id: 8,
     name: 'ES6 Tutorials',
     date: 'May 2017',
     github: null,
-    site: "https://scrimba.com/playlist/playlist-40",
+    site: 'https://scrimba.com/playlist/playlist-40',
     youtube: null,
     position: null,
     technologies: 'Scrimba',

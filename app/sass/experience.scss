@@ -1,11 +1,7 @@
 .exList {
   list-style-type: disc;
-  // list-style-position: inside;
   justify-content: flex-start;
   text-align: left;
-  li {
-    margin-top: 9px;
-  }
 }
 
 .exListCont {
@@ -13,7 +9,7 @@
   align-self: center;
   display: flex;
   justify-content: flex-start;
-  margin-top: 5px;
+  margin-top: .3em;
 }
 
 .exSpacing {
@@ -21,34 +17,21 @@
   display: flex;
   justify-content: center !important;
   flex-direction: column;
-  h2 {
-    margin-bottom: 3px;
-  }
 }
 
 .exCard {
   width: 100% !important;
-  display: flex;
-  background-color: rgba(0, 0, 0, .5);
-  transition: background-color 300ms, box-shadow 300ms;
-  // transition-timing-function: linear;
-  padding: 20%;
-  border-radius: 10px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  box-shadow: 0px 0px rgba(0, 0, 0, .3);
   justify-content: center;
-  flex-direction: column;
-  p {
-    text-align: justify;
-    margin: 2%;
+  h2 {
+    font-size: 1.7em;
+    margin-bottom: .6em;
   }
   h3 {
-    margin: 0px;
+    font-size: 1.2em;
   }
-}
-
-.exCard:hover {
-  background-color: rgba(0, 0, 0, .8);
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
+  li {
+  font-size: 1em;
+  margin-top: .7em;
+  line-height: 1.5em;
+  }
 }

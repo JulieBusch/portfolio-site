@@ -11,51 +11,40 @@ nav {
   }
 }
 
-#nav-menu-left {
-  margin-left: 15px;
+.nav-menu {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  h4 {
+    margin: 1em;
+    color: white;
+    font-size: 1.2em;
+    transition: all .1s linear;
+  }
+  h4:active {
+    transform: translateY(1px);
+  }
+}
+
+.left {
+  margin-left: 1em;
   align-self: flex-start;
   justify-content: flex-start;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-    h4 {
-      margin: 15px;
-      display: flex;
-      color: white;
-      transition: all .1s linear;
-    }
-    h4:active {
-      transform: translateY(1px);
-    }
 }
 
-#nav-menu-right {
-  margin-right: 15px;
+.right {
+  margin-right: 1em;
   align-self: flex-end;
-  align-items: center;
   justify-content: flex-end;
-  display: flex;
-  width: 50%;
-  height: 100%;
-    h4 {
-      margin: 15px;
-      display: flex;
-      color: white;
-      transition: all .1s linear;
-    }
-    h4:active {
-      transform: translateY(1px);
-    }
 }
 
-a {
+a, a:hover, a:active, a:focus {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
-  outline: none !important;
-}
-
-a:hover, a:active, a:focus {
+  height: 100%;
   outline: none !important;
 }
 

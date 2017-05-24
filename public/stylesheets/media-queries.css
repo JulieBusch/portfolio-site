@@ -221,15 +221,15 @@
     flex-direction: column; } }
 
 @media screen and (max-width: 800px) {
+  body {
+    font-size: .6em; }
   #about {
     width: 75%; }
     #about img {
       width: 50%;
       margin: 2%;
-      float: none; }
-  .card {
-    padding: 5%; } }
+      float: none; } }
 
 @media screen and (max-width: 1000px) {
-  .card {
-    padding: 10%; } }
+  body {
+    font-size: .8em; } }
