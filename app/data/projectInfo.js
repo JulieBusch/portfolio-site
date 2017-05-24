@@ -8,7 +8,7 @@ export default [
     youtube: null,
     position: 'Sole Developer',
     technologies: 'React and SCSS/Sass',
-    description: 'Of course I made this website! It is a work in progress. You can take a look at the code if you\'d like. I\'m focusing on responsive design and code modularity with this project, and will add some tasteful CSS animations as time permits.'
+    description: 'Of course I made this website! It is a work in progress. You can take a look at the code if you\'d like.'
   },
   {
     id: 8,
