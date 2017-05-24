@@ -19,7 +19,7 @@ export default function(props) {
                         project.youtube &&
                           <div className="icon">
                             <a href={project.youtube}>
-                              <img src="/images/youtube.png"/>
+                              <img src="/images/youtube.png" />
                             </a>
                           </div>
                       }
@@ -27,7 +27,7 @@ export default function(props) {
                         project.site &&
                           <div className="icon">
                             <a href={project.site}>
-                              <img src="/images/earth.png"/>
+                              <img src="/images/earth.png" />
                             </a>
                           </div>
                       }
@@ -35,7 +35,7 @@ export default function(props) {
                         project.github &&
                           <div className="icon">
                             <a href={project.github}>
-                              <img src="/images/github.png"/>
+                              <img src="/images/github.png" />
                             </a>
                           </div>
                       }

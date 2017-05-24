@@ -8,8 +8,14 @@ export default function About (props) {
         heyjuliebusch@gmail.com
           <br />
           <br />
-        <a href="www.github.com/JulieBusch"><img src="/images/github.png" /></a>
-        <a href="www.linkedin.com/in/julie-busch"><img src="/images/linkedin.png" /></a>
+        <div className="row iconRow">
+          <div className="icon">
+            <a href="https://github.com/JulieBusch"><img src="/images/github.png" /></a>
+          </div>
+          <div className="icon">
+            <a href="https://linkedin.com/in/julie-busch"><img src="/images/linkedin.png" /></a>
+          </div>
+        </div>
       </div>
     </div>
   );
