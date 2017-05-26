@@ -9,7 +9,7 @@ export default function (props) {
         {
           skills.map((set) => {
             return (
-              <div key={set.id} className="col-lg-3 col-md-6 col-sm-12 card skillCard">
+              <div key={set.id} className="col-xl-3 col-lg-3 col-md-6 col-sm-12 card skillCard">
                 <h3>{set.title}</h3>
                 <ul>
                   {
